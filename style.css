@@ -16,12 +16,12 @@ body{
     background-color: rgb(20, 45, 51);
     border-radius: 0px 0px 40px 10px;
     margin: 0px 5px;
-    padding: 25px 0px 10px 0px;
+    padding: 35px 0px 10px 0px;
     height: auto;
     color: rgba(238, 234, 15, 0.651);
 }
 
-ul {
+.header-nav ul {
     margin: auto;
     padding: 6px;
     list-style: none;
@@ -29,7 +29,16 @@ ul {
     flex-wrap: wrap;
 }
 
-li{
+.header-nav a{
+    text-decoration: none;
+    color: rgba(238, 234, 15, 0.651);
+}
+
+a:hover {
+    font-weight: bold;
+    color: rgba(255, 251, 0, 0.651);;
+}
+.header-nav li{
     float: left;
     margin-left: 18px;
     text-align: center;
@@ -102,17 +111,31 @@ li{
 
 }
 
-
-footer {
-    background-color: rgb(209, 203, 203);
-    height: auto;
+#edu-box {
+    width: 300px;
 }
 
-footer ul{ 
-    border: 1px solid black;
+footer {
+    color: rgb(252, 249, 251);
+    background-color: rgb(3, 56, 77);
+    height: auto;
+    /* text-align: center; */
+    padding: 30px 100px;
+}
+
+@media(max-width:768px) {
+    footer {
+        padding: 20px 20px;
+    }
+}
+footer ul{
+    margin: 50px 0px 0px 0px;
     list-style: none;
+    display: block;
+    align-items: center;
+    
 }
 
 footer li{
-    align-items: center;
+    display: inline-block;
 }
